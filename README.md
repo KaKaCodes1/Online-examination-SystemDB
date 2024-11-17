@@ -1,3 +1,7 @@
+[![](https://mermaid.ink/img/pako:eNp9kUFqwzAQRa8iZp1cwLtQaxFIncayaSmGMrWntmgsBVlKKXbuXimREyhptfsz72vmSyPUuiFIgEwqsTXYV4r5s-EPRZnznE3TcjmNjL-sHlnCakNoabgw51rs70ouivU2C4xWFqWK0LURwe1TUMJzHUZEFGXKs2Imci7KTREIQzXJ471xN6YlRea206-7BA9BePq2ysQzz4NhcO-9tH9sd4evANXwRYYaJlUFF9-c4j_bQHuqrbf5nGcbLKAn06Ns_HuPoVKB7ainCgLfoPkM4Mlz6KwW36qGxBpHCzDatR0kH7gfvHKHxieO_3WtHlC9aj3r0w9IxJPw?type=png)](https://mermaid.live/edit#pako:eNp9kUFqwzAQRa8iZp1cwLtQaxFIncayaSmGMrWntmgsBVlKKXbuXimREyhptfsz72vmSyPUuiFIgEwqsTXYV4r5s-EPRZnznE3TcjmNjL-sHlnCakNoabgw51rs70ouivU2C4xWFqWK0LURwe1TUMJzHUZEFGXKs2Imci7KTREIQzXJ471xN6YlRea206-7BA9BePq2ysQzz4NhcO-9tH9sd4evANXwRYYaJlUFF9-c4j_bQHuqrbf5nGcbLKAn06Ns_HuPoVKB7ainCgLfoPkM4Mlz6KwW36qGxBpHCzDatR0kH7gfvHKHxieO_3WtHlC9aj3r0w9IxJPw)
+
+
+
 # ONLINE EXAMINATION System DB
 > This Repository Entails, the System Design of the Online-examination System. This include's the various SQL files, such as the ER diagram, table structure and SQL Schema.
 
