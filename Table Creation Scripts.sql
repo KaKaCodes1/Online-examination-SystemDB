@@ -1,6 +1,6 @@
 -- Creating a new database for the system
-CREATE DATABASE onlineexam;
-USE onlineexam;
+CREATE DATABASE online_exam;
+USE online_exam;
 
 -- Create student table
 CREATE TABLE Student (
@@ -12,6 +12,8 @@ CREATE TABLE Student (
 	
 	password VARCHAR(255) NOT NULL	
 );
+-- Making student ids to begin from 1000
+ALTER TABLE Student AUTO_INCREMENT = 1000;
 
 -- Create lecturer table
 CREATE TABLE Lecturer (
@@ -35,8 +37,14 @@ CREATE TABLE Exam (
 
 	date DATE, 
 
-	total_marks INT
+	total_marks INT,
+    
+    lecturer_id INT,
+    
+    FOREIGN KEY (lecturer_id) REFERENCES Lecturer(lecturer_id)
 );
+-- Making exam ids to begin from 001
+ALTER TABLE exam AUTO_INCREMENT = 100;
 
 -- Create Results table
 CREATE TABLE Results ( 
@@ -66,6 +74,8 @@ CREATE TABLE Questions (
 	 marks INT  NOT NULL,
 
 	 exam_id INT,
+     
+     question_type ENUM('multiple_choice', 'text') NOT NULL DEFAULT 'multiple_choice',
 
 	 FOREIGN KEY (exam_id) REFERENCES exam(exam_id)
 );
@@ -84,13 +94,13 @@ CREATE TABLE Options (
     
     is_correct CHAR(1) CHECK (is_correct IN ('A', 'B', 'C', 'D')), 
 
-    question_id INT,     
+    question_id INT, 
                          
     FOREIGN KEY (question_id) REFERENCES Questions(question_id)   
 );
 
 -- Create answers table
-CREATE TABLE Answers(
+CREATE TABLE Selected_Answer(
 
 	answer_id INT PRIMARY KEY AUTO_INCREMENT,
 
@@ -101,6 +111,10 @@ CREATE TABLE Answers(
 	option_id INT NOT NULL,
  
 	answer_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+    
+    text_answer TEXT NULL,
+    
+    is_correct BOOLEAN,
 
 	FOREIGN KEY (student_id) REFERENCES student(student_id), 
 

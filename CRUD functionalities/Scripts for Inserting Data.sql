@@ -32,7 +32,7 @@ VALUES
 -- Creating the choices for a question with multiple choices
 INSERT INTO Options (option_a, option_b, option_c, option_d, is_correct, question_id)
 VALUES 
-('Monitor', 'Operating System', 'Keyboard', 'Mouse', 'B', 3);
+('Monitor', 'Operating System', 'Keyboard', 'Mouse', 'B', 1);
 
 -- Creating results data
 INSERT INTO Results (student_id, exam_id, score, status)
