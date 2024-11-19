@@ -29,3 +29,9 @@ This usually involves providing the database type, server name, database name, u
 
 ### View Results
 The results of your query will typically be displayed in an output pane or a dedicated results window within VS Code.
+
+### Trigger Functions 
+* Automatically set pass/fail status for exams
+* Prevent creating exams with past dates
+* Automatically mark multiple-choice answers
+* Update student's exam score as they submit answers
