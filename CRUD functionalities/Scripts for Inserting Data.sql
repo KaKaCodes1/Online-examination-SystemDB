@@ -29,6 +29,14 @@ VALUES
 ('Which on is NOT a hardware component?', 2, 100, 'multiple_choice'),
 ('Define Tuple', 10, 102, 'text');
 
+-- Inserting more questions
+INSERT INTO Questions (question_text, marks, exam_id, question_type) VALUES
+('What is the main function of the CPU in a computer?', 1, 100, 'multiple_choice'),
+('Which of the following is an example of an input device?', 1, 100, 'multiple_choice'),
+('What does the term "RAM" stand for in computing?', 1, 100, 'multiple_choice'),
+('What is the primary purpose of an operating system?', 1, 100, 'multiple_choice'),
+('Which programming language is commonly used for web development?', 1, 100, 'multiple_choice');
+
 -- Creating the choices for a question with multiple choices
 INSERT INTO Options (option_a, option_b, option_c, option_d, is_correct, question_id)
 VALUES 
@@ -40,6 +48,13 @@ VALUES
 (1000, 100, 60, 'pass'),
 (1001, 100, 20, 'fail'),
 (1002, 100, 18, 'fail');
+
+-- Inserting more reults
+INSERT INTO Results (student_id, exam_id, score)
+VALUES 
+(1000, 103, 50),
+(1001, 103, 60),
+(1002, 103, 54);
 
 
 

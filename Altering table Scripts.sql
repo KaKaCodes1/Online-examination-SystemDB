@@ -27,6 +27,6 @@
 -- ALTER TABLE Questions
 -- ADD COLUMN question_type ENUM('multiple_choice', 'text') NOT NULL DEFAULT 'multiple_choice';
 
--- Storing the text answer
+-- Storing the selected option answer
 -- ALTER TABLE Selected_Answer
--- ADD COLUMN text_answer TEXT NULL;
+-- ADD COLUMN selected_option CHAR(1);

@@ -70,19 +70,23 @@ DELIMITER ;
 
 -- Recording a student's answer
 DELIMITER //
-
 CREATE PROCEDURE RecordAnswer(
     IN p_student_id INT,
     IN p_question_id INT,
     IN p_option_id INT,
-    IN p_text_answer TEXT,
-    IN p_is_correct BOOLEAN
+    IN p_selected_option CHAR(1),
+    IN p_text_answer TEXT
 )
 BEGIN
-    INSERT INTO Selected_Answer (student_id, question_id, option_id, text_answer, is_correct)
-    VALUES (p_student_id, p_question_id, p_option_id, p_text_answer, p_is_correct);
-END //
-
+    -- Insert the selected answer
+    INSERT INTO Selected_Answer (student_id, question_id, option_id, selected_option, text_answer)
+    VALUES (p_student_id, p_question_id, p_option_id, p_selected_option, p_text_answer);
+    
+    SELECT is_correct 
+    FROM Selected_Answer 
+    WHERE student_id = p_student_id AND question_id = p_question_id;
+END;
+//
 DELIMITER ;
 
 -- Getting student results

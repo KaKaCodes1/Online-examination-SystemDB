@@ -1,3 +1,4 @@
+-- This checks whether the exam date is before the current date
 DELIMITER //
 CREATE TRIGGER validate_exam_date
 BEFORE INSERT ON Exam

@@ -122,6 +122,9 @@ CREATE TABLE Selected_Answer(
 
 	FOREIGN KEY (option_id) REFERENCES options(option_id)
 );
+-- Storing the selected option answer
+ALTER TABLE Selected_Answer
+ADD COLUMN selected_option CHAR(1);
 
 
 
