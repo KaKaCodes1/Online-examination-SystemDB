@@ -43,6 +43,7 @@ CALL RecordAnswer(
     
 );
 
-
+-- Report on the results of a specific student
+CALL GetStudentResults(1000);
 
 

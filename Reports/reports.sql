@@ -26,4 +26,24 @@ SELECT * FROM MarkingScheme
 WHERE exam_id = 100;
 
 
-
+CREATE VIEW ExamResults AS
+SELECT 
+	r.result_id,
+    r.student_id,
+    s.student_name,
+    e.exam_id,
+    e.exam_name,
+    r.score,
+    r.status
+FROM 
+    Results r
+JOIN 
+    Student s ON r.student_id = s.student_id
+JOIN 
+    Exam e ON r.exam_id = e.exam_id
+ORDER BY 
+    e.exam_id DESC, r.score DESC;
+    
+SELECT * 
+FROM ExamResults
+WHERE exam_id = 102;
