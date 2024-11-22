@@ -47,3 +47,27 @@ ORDER BY
 SELECT * 
 FROM ExamResults
 WHERE exam_id = 102;
+
+CREATE VIEW ViewExamQuestions AS
+SELECT 
+    q.exam_id,
+    e.exam_name,
+    q.question_id,
+    q.question_text,
+    q.question_type,
+    o.option_id,
+    o.option_a,
+    o.option_b,
+    o.option_c,
+    o.option_d
+FROM 
+    Questions q
+LEFT JOIN 
+    Options o ON q.question_id = o.question_id
+JOIN 
+    Exam e ON q.exam_id = e.exam_id;
+
+    
+SELECT *
+FROM ViewExamQuestions
+WHERE exam_id = 100;
