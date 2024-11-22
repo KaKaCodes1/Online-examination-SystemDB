@@ -1,0 +1,7 @@
+exam_id,exam_name,question_id,question_text,question_type,option_id,option_a,option_b,option_c,option_d
+100,Introduction To Computing,1,Which on is NOT a hardware component?,multiple_choice,2,Monitor,Operating System,Keyboard,Mouse
+100,Introduction To Computing,9,What is the main function of the CPU in a computer?,multiple_choice,4,Perform calculations,Store data,Display images,Print documents
+100,Introduction To Computing,10,Which of the following is an example of an input device?,multiple_choice,5,Monitor,Keyboard,Printer,Speaker
+100,Introduction To Computing,11,"What does the term RAM"" stand for in computing?""",multiple_choice,6,Read Access Memory,Random Access Memory,Readable and Accessible Memory,Randomized Address Memory
+100,Introduction To Computing,12,What is the primary purpose of an operating system?,multiple_choice,7,To manage hardware resources,To calculate mathematical equations,To create software applications,To store files
+100,Introduction To Computing,13,Which programming language is commonly used for web development?,multiple_choice,8,C,Python,HTML,Java
