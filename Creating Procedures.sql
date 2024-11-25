@@ -1,5 +1,5 @@
-USE online_exam;
-Adding new student
+
+-- Adding new student
 DELIMITER //
 
 CREATE PROCEDURE AddStudent(
